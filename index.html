@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Attendance Manager</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>ATTENDANCE MANAGER</h1>
+
+        <!-- Subject Section -->
+        <div id="subjectSection">
+            <h2>Add Subjects</h2>
+            <input type="text" id="subjectInput" placeholder="Enter Subject">
+            <button onclick="addSubject()" class="btn">Add Subject</button>
+        </div>
+
+        <!-- Attendance Section -->
+        <div id="attendanceSection">
+            <h2>Mark Attendance</h2>
+            <div id="subjectList"></div>
+            <input type="date" id="attendanceDate">
+            <button onclick="markAttendance()" class="btn">Mark Attendance</button>
+        </div>
+
+        <!-- Attendance Summary Section -->
+        <div id="summarySection">
+            <h2>Attendance Summary</h2>
+            <div id="summaryList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
